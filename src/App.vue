@@ -17,7 +17,7 @@
     <p>Valor inventario: ${{ valorInventario }}</p>
 
     <!-- LISTA -->
-    <ProductList
+    <ProductoLista
       :productos="productosFiltrados"
       @eliminar="eliminarProducto"
     />
@@ -28,7 +28,7 @@
 import { ref, computed } from 'vue'
 
 import ProductoForm from './components/ProductoForm.vue'
-import ProductList from './components/ProductList.vue'
+import ProductoLista from './components/ProductoLista.vue'
 
 
 const productos = ref([])
